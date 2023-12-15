@@ -1,4 +1,4 @@
-name: cron
+name: demo 4 cron
 on:
   schedule:
     - cron: "*/10 * * * *"
