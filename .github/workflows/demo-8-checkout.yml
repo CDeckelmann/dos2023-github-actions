@@ -1,4 +1,4 @@
-name: Build .MET 6
+name: Build .NET 6
 on:
   push:
     branches: [ main ]
