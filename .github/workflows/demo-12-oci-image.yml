@@ -1,4 +1,4 @@
-name: demo 11 .NET 6 OCI image
+name: demo 12 .NET 6 OCI image
 on:
   push:
     branches: [ main ]
