@@ -1,0 +1,12 @@
+name: demo-env-var
+on:
+  push:
+    branches: [ main ]
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hallo $MY-USER-NAME"
+        env:
+          MY-USER-NAME: Christoph D.
