@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo "Hallo $MY-USER-NAME"
+        run: echo "Hallo $MY_USER_NAME"
         env:
-          MY-USER-NAME: Christoph D.
+          MY_USER_NAME: Christoph D.
