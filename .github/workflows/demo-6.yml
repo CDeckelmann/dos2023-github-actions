@@ -1,4 +1,4 @@
-name: demo with parameter
+name: demo 6 with parameters
 on:
   push:
     branches: [ main ]
