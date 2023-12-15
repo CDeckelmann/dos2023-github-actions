@@ -6,7 +6,7 @@ on:
         description: "Who to greet"
         required: true
         type: string
-        default: "rOCCO"
+        default: "Christoph"
       laune:
         description: "Wie ist die Laune"
         required: true
@@ -14,11 +14,11 @@ on:
         options:
           - "gut"
           - "schlecht"
-          - "egal"
+          - "mittel"
         default: "gut"
 jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo "Hello ich bin ${{ inputs.name }}! Meine Laune ist ${{ inputs.laune }}"
+        run: echo "Hello ich bin ${{ inputs.name }}. Meine Laune ist ${{ inputs.laune }}."
