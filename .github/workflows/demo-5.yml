@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Install MC
-       run: sudo apt-get install mc- y
+       run: sudo apt-get install mc -y
      - name: Say Hello
        run: echo Hallo
          
