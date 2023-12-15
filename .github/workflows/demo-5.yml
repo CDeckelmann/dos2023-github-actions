@@ -2,13 +2,12 @@ name: demo-5
 on:
   push:
     branches: [ main ]
-  jobs:
-    run-with-mc:
-      runs-on: ubuntu-latest
-      steps:
-       - name: Install MC
-         run: sudo apt-get install mc- y
-       - name Say Hello
-         run: echo Hallo DevOpenSpace
-         
+jobs:
+  run-with-mc:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Install MC
+       run: sudo apt-get install mc- y
+     - name: Say Hello
+       run: echo Hallo
          
