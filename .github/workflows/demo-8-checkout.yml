@@ -1,4 +1,4 @@
-name: Build .NET 6
+name: demo 8 Build .NET 6
 on:
   push:
     branches: [ main ]
@@ -13,3 +13,15 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 6.0.x
+      - name: Restore Dependencies
+        run: |
+          dotnet restore DemoApp/Client/src/Client.csproj
+          dotnet restore DemoApp/Client/src/Server.csproj
+      - name: Build
+        run: |
+          dotnet build --no-restore DemoApp/Client/src/Client.csproj
+          dotnet build --no-restore DemoApp/Client/src/Server.csproj
+      - name: Publish
+        run: |
+          dotnet publish --no-build DemoApp/Client/src/Client.csproj
+          dotnet publish --no-build DemoApp/Client/src/Server.csproj
