@@ -1,4 +1,4 @@
-name: demo-env-var
+name: demo 7 env var
 on:
   push:
     branches: [ main ]
