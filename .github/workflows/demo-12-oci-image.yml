@@ -1,4 +1,4 @@
-name: Build OCI Image
+name: Demo 12 Build OCI Image
 on:
   push:
     branches: [main]
